@@ -1,0 +1,9 @@
+transformers
+datasets
+tokenizers
+pydantic-core
+huggingface_hub 
+wheel 
+wandb
+pydantic
+# ipywidgets widgetsnbextension

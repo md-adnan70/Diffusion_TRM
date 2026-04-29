@@ -1,0 +1,70 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            kpb15pqr5hqfz1bu4ooiaky2lwzu8bgo:
+                codePath: /workspace/Diffusion_TRM/continuous-diff.ipynb
+                codePathLocal: continuous-diff.ipynb
+                cpu_count: 128
+                cpu_count_logical: 256
+                cudaVersion: "12.7"
+                disk:
+                    /:
+                        total: "32212254720"
+                        used: "1482391552"
+                email: rao.adnan.098@gmail.com
+                executable: /workspace/Diffusion_TRM/venv/bin/python
+                git:
+                    commit: 3dbb678982029a5ff304957821f9fd43d2dac506
+                    remote: https://github.com/md-adnan70/Diffusion_TRM.git
+                gpu: NVIDIA L40S
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-852601fb-8741-fa4e-f9b5-491d6dc82c51
+                host: 7a60c597c111
+                memory:
+                    total: "1081972523008"
+                os: Linux-6.5.0-35-generic-x86_64-with-glibc2.39
+                program: /workspace/Diffusion_TRM/continuous-diff.ipynb
+                python: CPython 3.12.3
+                root: /workspace/Diffusion_TRM
+                startedAt: "2026-04-29T06:34:17.781317Z"
+                writerId: kpb15pqr5hqfz1bu4ooiaky2lwzu8bgo
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 51
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.12.3
+            "5": 0.26.1
+            "6": 5.7.0
+            "8":
+                - 1
+            "12": 0.26.1
+            "13": linux-x86_64
+architecture:
+    value: TRM-Diffusion
+batch_size:
+    value: 128
+epochs:
+    value: 10
+gpu:
+    value: NVIDIA L40S
+learning_rate:
+    value: 0.0001

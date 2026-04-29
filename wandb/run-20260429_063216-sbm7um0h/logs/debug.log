@@ -1,0 +1,5 @@
+2026-04-29 06:32:16,128 INFO    MainThread:3305 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /workspace/Diffusion_TRM/wandb/run-20260429_063216-sbm7um0h/logs/debug.log
+2026-04-29 06:32:16,131 INFO    MainThread:3305 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /workspace/Diffusion_TRM/wandb/run-20260429_063216-sbm7um0h/logs/debug-internal.log
+2026-04-29 06:32:16,131 INFO    MainThread:3305 [wandb_init.py:init():850] calling init triggers
+2026-04-29 06:32:16,132 INFO    MainThread:3305 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'batch_size': 128, 'learning_rate': 0.0001, 'epochs': 10, 'architecture': 'TRM-Diffusion', 'gpu': 'NVIDIA L40S', '_wandb': {}}

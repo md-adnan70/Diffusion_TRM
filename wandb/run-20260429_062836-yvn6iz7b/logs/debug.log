@@ -1,0 +1,168 @@
+2026-04-29 06:28:36,347 INFO    MainThread:3305 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-04-29 06:28:36,348 INFO    MainThread:3305 [wandb_setup.py:_flush():81] Configure stats pid to 3305
+2026-04-29 06:28:36,348 INFO    MainThread:3305 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-29 06:28:36,349 INFO    MainThread:3305 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /workspace/Diffusion_TRM/wandb/run-20260429_062836-yvn6iz7b/logs/debug.log
+2026-04-29 06:28:36,353 INFO    MainThread:3305 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /workspace/Diffusion_TRM/wandb/run-20260429_062836-yvn6iz7b/logs/debug-internal.log
+2026-04-29 06:28:36,353 INFO    MainThread:3305 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x789c508c0920>
+2026-04-29 06:28:36,355 INFO    MainThread:3305 [wandb_init.py:init():850] calling init triggers
+2026-04-29 06:28:36,357 INFO    MainThread:3305 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'batch_size': 128, 'learning_rate': 0.0001, 'epochs': 10, 'architecture': 'TRM-Diffusion', 'gpu': 'NVIDIA L40S', '_wandb': {}}
+2026-04-29 06:28:36,358 INFO    MainThread:3305 [wandb_init.py:init():898] starting backend
+2026-04-29 06:28:36,608 INFO    MainThread:3305 [wandb_init.py:init():913] sending inform_init request
+2026-04-29 06:28:36,990 INFO    MainThread:3305 [wandb_init.py:init():918] backend started and connected
+2026-04-29 06:28:37,000 INFO    MainThread:3305 [wandb_run.py:_label_probe_notebook():1345] probe notebook
+2026-04-29 06:28:37,022 INFO    MainThread:3305 [wandb_init.py:init():988] updated telemetry
+2026-04-29 06:28:37,216 INFO    MainThread:3305 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-04-29 06:28:37,589 INFO    MainThread:3305 [wandb_init.py:init():1056] starting run threads in backend
+2026-04-29 06:28:37,769 INFO    MainThread:3305 [wandb_run.py:_console_start():2554] atexit reg
+2026-04-29 06:28:37,770 INFO    MainThread:3305 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-04-29 06:28:37,771 INFO    MainThread:3305 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-04-29 06:28:37,771 INFO    MainThread:3305 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-04-29 06:28:37,775 INFO    MainThread:3305 [wandb_init.py:init():1094] run started, returning control to user process
+2026-04-29 06:31:31,374 INFO    wandb-AsyncioManager-main:3305 [service_client.py:_forward_responses():134] Reached EOF.
+2026-04-29 06:31:31,376 INFO    wandb-AsyncioManager-main:3305 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
+2026-04-29 06:31:31,481 ERROR   wandb-AsyncioManager-main:3305 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:31:31,488 ERROR   wandb-AsyncioManager-main:3305 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:31:31,490 ERROR   wandb-AsyncioManager-main:3305 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:31:31,908 INFO    MainThread:3305 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-29 06:31:31,912 ERROR   wandb-AsyncioManager-main:3305 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:31:31,914 ERROR   wandb-AsyncioManager-main:3305 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:32:12,705 INFO    MainThread:3305 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-29 06:32:12,707 INFO    MainThread:3305 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-29 06:32:16,135 INFO    MainThread:3305 [wandb_run.py:_finish():2321] finishing run rao-adnan-098-jamia-millia-islamia/diffusion-lm-roc/yvn6iz7b
+2026-04-29 06:32:16,142 ERROR   MainThread:3305 [wandb_init.py:init():1601] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_init.py", line 1586, in init
+    run = wi.init(run_settings, run_config, run_printer)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_init.py", line 871, in init
+    self._wl.finish_all_active_runs()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 411, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 456, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 2309, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 411, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 2322, in _finish
+    with telemetry.context(run=self) as tel:
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 763, in _telemetry_callback
+    self._telemetry_flush()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/wandb_run.py", line 776, in _telemetry_flush
+    self._interface._publish_telemetry(self._telemetry_obj)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/interface/interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 137, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-29 06:32:16,702 INFO    MainThread:3305 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend

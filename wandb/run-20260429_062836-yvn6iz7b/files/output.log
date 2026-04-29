@@ -1,0 +1,10 @@
+Starting Training on cuda...
+Epoch 0:   0%|          | 0/614 [00:00<?, ?it/s]/tmp/ipykernel_3305/3899436553.py:67: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=torch.bfloat16):
+Epoch 0: 100%|██████████| 614/614 [01:10<00:00,  8.72it/s, Loss=2.1432]
+Epoch 0 finished. Saving EMA checkpoint...
+Saved: /workspace/checkpoints/diffusion_roc_epoch_0.pt
+Epoch 1: 100%|██████████| 614/614 [01:09<00:00,  8.88it/s, Loss=2.1355]
+Epoch 1 finished. Saving EMA checkpoint...
+Saved: /workspace/checkpoints/diffusion_roc_epoch_1.pt
+Epoch 2:  33%|███▎      | 204/614 [00:22<00:43,  9.39it/s, Loss=2.1379]
