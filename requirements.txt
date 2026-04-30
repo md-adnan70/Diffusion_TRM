@@ -6,4 +6,5 @@ huggingface_hub
 wheel 
 wandb
 pydantic
+tqdm
 # ipywidgets widgetsnbextension

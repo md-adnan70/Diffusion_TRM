@@ -1,1 +1,5 @@
 checkpoints/
+prev_models/
+wandb/
+myenv/
+new-MODELS/
