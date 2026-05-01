@@ -7,4 +7,5 @@ wheel
 wandb
 pydantic
 tqdm
-# ipywidgets widgetsnbextension
+ipywidgets 
+widgetsnbextension
