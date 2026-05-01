@@ -3,3 +3,5 @@ prev_models/
 wandb/
 myenv/
 new-MODELS/
+tinystories_wordlevel.json
+tinystories_dataset.txt
