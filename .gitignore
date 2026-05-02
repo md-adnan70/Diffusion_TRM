@@ -1,7 +1,8 @@
 checkpoints/
 prev_models/
 wandb/
-myenv/
+venv/
 new-MODELS/
 tinystories_wordlevel.json
 tinystories_dataset.txt
+models/
