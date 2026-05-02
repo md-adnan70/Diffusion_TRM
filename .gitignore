@@ -6,3 +6,4 @@ new-MODELS/
 tinystories_wordlevel.json
 tinystories_dataset.txt
 models/
+trm_diffusion_epoch_10_complete.pt

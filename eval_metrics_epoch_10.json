@@ -1,0 +1,7 @@
+{
+    "model_checkpoint": "trm_diffusion_epoch_10_complete.pt",
+    "num_samples_evaluated": 500,
+    "pseudo_perplexity": 85.28527938538741,
+    "diversity_2gram": 0.17968601029682832,
+    "diversity_3gram": 0.544592516658124
+}

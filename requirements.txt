@@ -9,3 +9,4 @@ pydantic
 tqdm
 ipywidgets 
 widgetsnbextension
+nltk
